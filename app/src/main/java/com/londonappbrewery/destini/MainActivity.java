@@ -22,12 +22,6 @@ public class MainActivity extends AppCompatActivity {
             new Questions(R.string.T3_Story,R.string.T3_Ans1,R.string.T3_Ans2),
     };
 
-    private int[] StroyEnd = new int[]
-            {
-                    R.string.T4_End,
-                    R.string.T5_End,
-                    R.string.T6_End,
-            };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,8 +95,7 @@ public class MainActivity extends AppCompatActivity {
         else
             if(userselection=="A2")
         {
-            mQuestion=StroyEnd[2];
-            mStoryTextView.setText(mQuestion);
+            mStoryTextView.setText(R.string.T6_End);
             mTopButton.setVisibility(View.GONE);
             mBelowButton.setVisibility(View.GONE);
 
@@ -132,15 +125,13 @@ public class MainActivity extends AppCompatActivity {
                 else
                     if(userselection=="B2")
                     {
-                        mQuestion=StroyEnd[0];
-                        mStoryTextView.setText(mQuestion);
+                        mStoryTextView.setText(R.string.T4_End);
                         mTopButton.setVisibility(View.GONE);
                         mBelowButton.setVisibility(View.GONE);
                     }
                     else
                     {
-                        mQuestion=StroyEnd[1];
-                        mStoryTextView.setText(mQuestion);
+                        mStoryTextView.setText(R.string.T5_End);
                         mTopButton.setVisibility(View.GONE);
                         mBelowButton.setVisibility(View.GONE);
 
